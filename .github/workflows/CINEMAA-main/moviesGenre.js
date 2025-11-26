@@ -98,9 +98,7 @@ settheme();
 
 const myApi = process.env.TMDB_API_KEY;
 if (!myApi) {
-  console.warn('TMDB API key (TMDB_API_KEY) is not set in the environment. Requests requiring the API key will fail.');
-}
-// Then, use myApi wherever the API key was required in fetch calls.
+  console.warn('TMDB API key (TMDB_API_KEY) is not set in the environment. Requests requiring the API key will fai
 
 const firstpage = async () => {
   const res = await fetch(
