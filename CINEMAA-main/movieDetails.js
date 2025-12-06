@@ -256,14 +256,14 @@ rightarrow.forEach((item) =>
   })
 );
 
-/* MOVIE CLCIKED*/
+/* MOVIE clicked*/
 
 const html2 = function (moviee) {
   document.title = `${
     moviee.title +
     " " +
     "(" +
-    dateFormatter(moviee.release_date) +
+    dateFormatter(movie.release_date) +
     ")" +
     " " +
     "|" +
@@ -272,12 +272,12 @@ const html2 = function (moviee) {
   }`;
 
   let cate = "";
-  moviee.genres.forEach((item) => {
+  movie.genres.forEach((item) => {
     cate += `<li class="movie_details_category_ul_li">${item.name}</li>`;
   });
   return `<div class="movie_details">
     <img class="movie_details_poster" src="https://image.tmdb.org/t/p/w500/${
-      moviee.poster_path
+      movie.poster_path
     }"
     onerror="this.onerror=null;this.src='./resources/D moviesand tv show.png';"
      alt="title">
