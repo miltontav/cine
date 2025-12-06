@@ -45,7 +45,7 @@ const Castfun = (castee) => {
         <div class="name_character_container">
          <p class="movie_title">${castee.original_name}</p>
          <div class="date_rating casteecharacter" >
-         ${castee.character}
+         ${Castle.character}
              </div>
              </div>
          </div>`;
