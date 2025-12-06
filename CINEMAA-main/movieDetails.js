@@ -1,5 +1,5 @@
 const posterBig = document.querySelector(".poster_big");
-const movieDetailnavContainer = document.querySelector(
+const moviedetailContainer = document.querySelector(
   ".movieDetailnavContainer"
 );
 const gradient = document.querySelector(".gradient");
