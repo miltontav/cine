@@ -1,20 +1,20 @@
 const arrowLeft = document.querySelector(".arrow_left");
 const hamburger = document.querySelector(".hamburger");
-const lightDarkmode = document.querySelector(".light_darkmode");
+const lightdarksome = document.querySelector(".light_darksome");
 const hamburgerPhone = document.querySelector(".hamburgerphone");
 const sidenavContainer = document.querySelector(".sidenav_container");
-const overlaySideNavabar = document.querySelector(".overlay_side_navabar");
+const overlaysidebar = document.querySelector(".overlay_side_navbar");
 const sidenav = document.querySelector(".sidenav");
 const searchbox = document.querySelector(".search");
-const menuulLI = document.querySelectorAll(".menu_ul li");
+const menuLI = document.querySelectorAll(".menu_ul li");
 const cards = document.querySelectorAll(".card blockquote");
 const AllCards = document.querySelectorAll(".card");
 const biChevronDown = document.querySelectorAll("card .bi-chevron-down");
 
 
-menuulLI.forEach(item => {
+menuLI.forEach(item => {
     item.addEventListener('click', function () {
-        menuulLI.forEach(i => i.classList.remove('hovered'))
+        menuLI.forEach(i => i.classList.remove('hovered'))
         item.classList.add('hovered');
     })
 
@@ -43,21 +43,21 @@ function settheme() {
 settheme()
 
 arrowLeft.addEventListener("click", function () {
-    document.body.classList.remove("minimize_siderbar");
+    document.body.classList.remove("minimize_sidebar");
 });
 
 hamburger.addEventListener("click", function () {
-    document.body.classList.add("minimize_siderbar");
+    document.body.classList.add("minimize_sidebar");
 });
 
 hamburgerPhone.addEventListener("click", function () {
     sidenavContainer.classList.add("sidenav_container_active");
-    overlaySideNavabar.classList.add("sidenav_container_active");
+    overlaysidebar.classList.add("sidenav_container_active");
 });
-overlaySideNavabar.addEventListener("click", function () {
+overlaysidebar.addEventListener("click", function () {
     sidenavContainer.classList.remove("sidenav_container_active");
-    overlaySideNavabar.classList.remove("sidenav_container_active");
-    document.body.classList.remove("minimize_siderbar");
+    overlaysidebar.classList.remove("sidenav_container_active");
+    document.body.classList.remove("minimize_sidebar");
 });
 
 
@@ -90,14 +90,14 @@ AllCards.forEach(eachCard => {
 })
 
 
-menuulLI.forEach(item => {
+menuLI.forEach(item => {
     item.addEventListener('click', function () {
-        menuulLI.forEach(i => i.classList.remove('hovered'))
+        menuLI.forEach(i => i.classList.remove('hovered'))
         item.classList.add('hovered');
     })
 
 })
-menuulLI[3].classList.add('hovered');
+menuLI[3].classList.add('hovered');
 
 
 
