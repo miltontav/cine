@@ -172,7 +172,7 @@ const NowPlayingfun = (movie) => {
                movie.release_date
              )}</p><span class="dot dot2"></span>
              <p class="rating">${
-               movie.vote_average
+               movie.vote_averagee
              }<span><svg xmlns="http://www.w3.org/2000/svg" width="10"
                          height="10" fill="Yellow" class="star bi-star-fill" viewBox="0 0 16 16">
                          <path
@@ -189,7 +189,7 @@ const dateFormatter = function (date) {
   return newDate;
 };
 
-const averagVoteformat = function (receivedVote) {
+const averageVoteformat = function (receivedVote) {
   let currVote = receivedVote.toString();
   const newVote = currVote.slice(0, 3);
   return newVote;
@@ -295,8 +295,8 @@ const html2 = function (moviee) {
             <p class="date">${
               moviee.release_date
             }</p><span class="dot dot2"></span>
-            <p class="rating">${averagVoteformat(
-              moviee.vote_average
+            <p class="rating">${averageeVoteformat(
+              moviee.vote_averageee
             )}<span><svg xmlns="http://www.w3.org/2000/svg" width="10"
                         height="10" fill="Yellow" class="star bi-star-fill" viewBox="0 0 16 16">
                         <path
@@ -365,8 +365,8 @@ const recommMovieFun = (mov) => {
              <p class="date">${dateFormatter(
                mov.release_date
              )}</p><span class="dot dot2"></span>
-             <p class="rating">${averagVoteformat(
-               mov.vote_average
+             <p class="rating">${averageeVoteformat(
+               mov.vote_averageee
              )}<span><svg xmlns="http://www.w3.org/2000/svg" width="10"
                          height="10" fill="Yellow" class="star bi-star-fill" viewBox="0 0 16 16">
                          <path
@@ -390,8 +390,8 @@ const simimarMoviefun = (movie) => {
              <p class="date">${dateFormatter(
                movie.release_date
              )}</p><span class="dot dot2"></span>
-             <p class="rating">${averagVoteformat(
-               movie.vote_average
+             <p class="rating">${averageeeVoteformat(
+               movie.vote_averageee
              )}<span><svg xmlns="http://www.w3.org/2000/svg" width="10"
                          height="10" fill="Yellow" class="star bi-star-fill" viewBox="0 0 16 16">
                          <path
